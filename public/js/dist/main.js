@@ -245,7 +245,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pub
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Imports\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);\", \"\"]);\n// Module\nexports.push([module.i, \"* {\\n  box-sizing: border-box; }\\n\\n.btn {\\n  border: none;\\n  padding: 10px 25px;\\n  cursor: pointer; }\\n\\n.demo {\\n  background-color: #7edddd;\\n  color: #fafbfc;\\n  font-size: 25px; }\\n\\nlabel,\\nh1 {\\n  color: #353c45; }\\n\\n.options {\\n  transition: filter 0.5s; }\\n\\n.blur {\\n  filter: blur(5px); }\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./public/css/app.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Imports\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);\", \"\"]);\n// Module\nexports.push([module.i, \"* {\\n  box-sizing: border-box; }\\n\\n.btn {\\n  border: none;\\n  padding: 10px 25px;\\n  cursor: pointer; }\\n\\n.demo {\\n  background-color: #7edddd;\\n  color: #fafbfc;\\n  font-size: 25px; }\\n\\nlabel,\\nh1 {\\n  color: #353c45; }\\n\\n.blur {\\n  transition: filter 0.5s;\\n  filter: blur(5px); }\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./public/css/app.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 

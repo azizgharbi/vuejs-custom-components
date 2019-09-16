@@ -1,8 +1,15 @@
+@import "./variables";
+
 button {
   border: none;
   padding: 10px 25px;
-  background-color: orange;
-  color: #fff;
+  background-color: $color-accent2-light;
+  color: $color-night-gray1;
   font-size: 25px;
   cursor: pointer;
+}
+
+label,
+h1 {
+  color: $color-accent4-dark;
 }

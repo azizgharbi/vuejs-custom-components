@@ -1,3 +1,5 @@
+@import "./_variables.scss";
+
 .modal-content {
   position: fixed;
   z-index: 99;
@@ -7,27 +9,20 @@
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
-}
-
-.footer {
-  color: red;
-}
-
-.header {
-  color: green
+  box-shadow: $box-shadow1;
 }
 
 .modal {
   background: #fff;
-  padding: 20px;
+  padding: 24px;
   width: 50%;
   margin: 10% auto;
   display: block;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 .modal-body {
-  color: #555151;
+  color: $color-sky-gray8;
   font-size: 20px;
   font-weight: 300;
   margin-top: 50px;

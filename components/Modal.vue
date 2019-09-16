@@ -1,8 +1,8 @@
 <template>
   <div
     class="modal-content"
-    v-on:click="closeOutSide"
     :style="active ?'display:block;':'display:none;'"
+    v-on:click="closeOutSide"
   >
     <div :class="['modal',state]">
       <span class="close" v-show="closeable" v-on:click="close">&times;</span>

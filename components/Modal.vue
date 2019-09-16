@@ -8,7 +8,7 @@
       <span class="close" v-show="closeable" v-on:click="close">&times;</span>
       <div class="modal-body">
         <h3>
-          <i class="fas fa-camera" :class="icon"></i>
+          <i :class="['fas',icon]"></i>
           {{title}}
         </h3>
         <slot name="header"></slot>
@@ -40,14 +40,20 @@ export default {
   computed: {
     icon: function() {
       switch (this.state) {
-        case "normal":
-          return "fa-normal";
+        case "info":
+          return "fa-info-circle";
           break;
         case "success":
-          return "fa-success";
+          return "fa-check-circle";
+          break;
+        case "alert":
+          return "fa-exclamation-triangle";
+          break;
+        case "danger":
+          return "fa-exclamation-circle";
           break;
         default:
-          return "fa-alert";
+          return "fa-info-circle";
       }
     }
   },

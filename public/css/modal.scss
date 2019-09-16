@@ -19,10 +19,14 @@
   background: $color-white;
   width: 50%;
   min-width: 400px;
-  margin: 10% auto;
+  margin: 4% auto;
   padding: 24px;
   display: block;
   border-radius: 4px;
+  animation-name: popup;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.5s;
 }
 
 .modal-body {
@@ -84,4 +88,15 @@
 .btn-alert {
   background-color: $color-accent7-normal;
   color: $color-night-gray7;
+}
+
+//animation
+
+@keyframes popup {
+  from {
+    transform: translateY(0px) scale(0);
+  }
+  to {
+    transform: translateY(250px) scale(1);
+  }
 }

@@ -8,7 +8,7 @@
       <span class="close" v-show="closeable" v-on:click="close">&times;</span>
 
       <div class="modal-body">
-        <div class="icon-box">
+        <div class="icon-box" :class="['icon',state].join('-')">
           <i :class="['fas',icon]"></i>
         </div>
         <div>

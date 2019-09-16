@@ -68,7 +68,6 @@
   font-size: 18px;
   background-color: $color-accent1-normal;
   color: $color-white;
-  border: 1px solid $color-night-gray4;
   border-radius: 4px;
 }
 
@@ -95,6 +94,23 @@
 .btn-alert {
   background-color: $color-accent7-normal;
   color: $color-night-gray7;
+}
+
+.icon-info,
+.icon-normal {
+  color: $color-accent1-normal;
+}
+
+.icon-success {
+  color: $color-accent6-normal;
+}
+
+.icon-danger {
+  color: $color-accent3-normal;
+}
+
+.icon-alert {
+  color: $color-accent7-normal;
 }
 
 //animations

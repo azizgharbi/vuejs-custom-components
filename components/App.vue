@@ -1,7 +1,6 @@
 <template>
   <div>
     <div>
-      <button class="btn demo" v-on:click="open">open</button>
       <Modal
         :active="active"
         :closeable="closeable"
@@ -25,6 +24,7 @@
     </div>
 
     <div class="options">
+      <button class="btn demo" v-on:click="open">open</button>
       <h1>Options:</h1>
       <input type="checkbox" id="closeable" v-model="closeable" />
       <label for="closeable">Closeable : {{ closeable }}</label>
@@ -65,11 +65,13 @@ export default {
   methods: {
     open: function() {
       this.active = !this.active;
+      document.querySelector(".options").classList.add("blur");
     }
   },
   created() {
     EventBus.$on("close", c => {
       this.active = c;
+      document.querySelector(".options").classList.remove("blur");
     });
   }
 };

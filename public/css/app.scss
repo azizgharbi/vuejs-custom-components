@@ -20,3 +20,11 @@ label,
 h1 {
   color: $color-sky-gray10;
 }
+
+.options {
+  transition: filter 0.5s;
+}
+
+.blur {
+  filter: blur(5px);
+}

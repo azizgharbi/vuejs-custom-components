@@ -6,18 +6,21 @@
   >
     <div :class="['modal',state]">
       <span class="close" v-show="closeable" v-on:click="close">&times;</span>
+
       <div class="modal-body">
-        <h3>
+        <div class="icon-box">
           <i :class="['fas',icon]"></i>
-          {{title}}
-        </h3>
-        <slot name="header"></slot>
-        <slot></slot>
-        <slot name="footer"></slot>
+        </div>
+        <div>
+          <h3>{{title}}</h3>
+          <slot name="header"></slot>
+          <slot></slot>
+          <slot name="footer"></slot>
+        </div>
       </div>
       <div class="confirmation-box">
-        <button class="btn cancel">Annuler</button>
-        <button class="btn confirm" :class="['btn',state].join('-')">Confirmer</button>
+        <button class="btn cancel" v-on:click="close">Annuler</button>
+        <button class="btn confirm" :class="['btn',state].join('-')" v-on:click="confirm">Confirmer</button>
       </div>
     </div>
   </div>
@@ -58,7 +61,7 @@ export default {
     }
   },
   methods: {
-    close: function(e) {
+    close: function() {
       EventBus.$emit("close", false);
     },
     closeOutSide: function(e) {
@@ -67,6 +70,9 @@ export default {
       if (this.closeOnOutsideClick && e.target == modalContent) {
         EventBus.$emit("close", false);
       }
+    },
+    confirm() {
+      EventBus.$emit("confirm");
     }
   }
 };

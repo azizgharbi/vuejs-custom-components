@@ -73,6 +73,10 @@ export default {
       this.active = c;
       document.querySelector(".options").classList.remove("blur");
     });
+
+    EventBus.$on("confirm", () => {
+      console.log("confirm");
+    });
   }
 };
 </script>

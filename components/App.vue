@@ -1,18 +1,26 @@
 <template>
   <div>
-    <div class="demo">
-      <button v-on:click="open">open</button>
+    <div>
+      <button class="btn demo" v-on:click="open">open</button>
       <Modal
         :active="active"
         :closeable="closeable"
         :closeOnOutsideClick="closeOnOutsideClick"
         :state="state"
+        :title="'Excepteur in aliquip et mollit officia'"
       >
-        <div slot="header">header</div>
-        <p>hello</p>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-camera-retro"></i>
-        <div slot="footer">footer</div>
+        <div slot="header"></div>
+        <p>
+          Excepteur in aliquip et mollit officia aliquip eiusmod
+          labore veniam magna. Et deserunt qui ad mollit esse cillum
+          veniam non nostrud reprehenderit ipsum ad. Nulla sunt anim
+          do ut sunt ullamco sunt mollit quis minim aliquip velit in proident,
+          Excepteur in aliquip et mollit officia aliquip eiusmod
+          labore veniam magna. Et deserunt qui ad mollit esse cillum
+          veniam non nostrud reprehenderit ipsum ad. Nulla sunt anim
+          do ut sunt ullamco sunt mollit quis minim aliquip velit in proident.
+        </p>
+        <div slot="footer"></div>
       </Modal>
     </div>
 

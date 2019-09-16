@@ -1,6 +1,8 @@
 @import "./_variables.scss";
 
 .modal-content {
+  font-family: $font;
+  font-weight: 300;
   position: fixed;
   z-index: 99;
   left: 0;
@@ -13,16 +15,18 @@
 }
 
 .modal {
-  background: #fff;
-  padding: 24px;
+  border-top: 10px solid $color-accent1-normal;
+  background: $color-white;
   width: 50%;
+  min-width: 400px;
   margin: 10% auto;
+  padding: 24px;
   display: block;
   border-radius: 4px;
 }
 
 .modal-body {
-  color: $color-sky-gray8;
+  color: $color-night-gray7;
   font-size: 20px;
   font-weight: 300;
   margin-top: 50px;
@@ -31,6 +35,52 @@
 .close {
   font-size: 30px;
   font-weight: bold;
+  color: $color-night-gray7;
   float: right;
   cursor: pointer;
+}
+
+.confirmation-box {
+  text-align: right;
+  margin: 12px 12px;
+}
+
+.cancel {
+  font-size: 18px;
+  background-color: $color-white;
+  color: $color-night-gray7;
+  border: 1px solid $color-night-gray4;
+  border-radius: 4px;
+}
+
+.confirm {
+  font-size: 18px;
+  background-color: $color-accent1-normal;
+  color: $color-white;
+  border: 1px solid $color-night-gray4;
+  border-radius: 4px;
+}
+
+.success {
+  border-top: 10px solid $color-accent6-normal;
+}
+
+.danger {
+  border-top: 10px solid $color-accent3-normal;
+}
+
+.alert {
+  border-top: 10px solid $color-accent7-normal;
+}
+
+.btn-success {
+  background-color: $color-accent6-normal;
+}
+
+.btn-danger {
+  background-color: $color-accent3-normal;
+}
+
+.btn-alert {
+  background-color: $color-accent7-normal;
 }

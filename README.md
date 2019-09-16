@@ -1,6 +1,6 @@
-## undefined
+## Description
 
-test vuejs modal centiva
+Test vuejs modal component centiva
 
 ## Current Version
 

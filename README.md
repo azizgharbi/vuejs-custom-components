@@ -4,15 +4,12 @@ Test vuejs modal component centiva
 
 ## Current Version
 
-1.0.0
+0.0.1
 
 ## Author
 
 Aziz Gharbi
 
-## License
-
-ISC
 
 ## Notes
 

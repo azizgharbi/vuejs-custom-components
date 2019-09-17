@@ -11,7 +11,7 @@
         <div class="icon-box" :class="['icon',state].join('-')">
           <i :class="['fas',icon]"></i>
         </div>
-        <div>
+        <div class="text-box">
           <h3>{{title}}</h3>
           <slot name="header"></slot>
           <slot></slot>

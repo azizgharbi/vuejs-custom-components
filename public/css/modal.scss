@@ -21,7 +21,6 @@
   min-width: 400px;
   margin: 4% auto;
   padding: 24px;
-  display: block;
   border-radius: 4px;
   animation-name: popup;
   animation-fill-mode: both;
@@ -47,11 +46,14 @@
 
 .icon-box {
   position: relative;
-  top: 20px;
-  right: 20px;
+  top: 15px;
+  right: 10px;
   font-size: 24px;
-  width: 24px;
-  height: 24px;
+
+}
+
+.text-box {
+  margin-left: 20px;
 }
 
 .confirmation-box {
@@ -102,36 +104,47 @@
 .icon-info,
 .icon-normal {
   color: $color-accent1-normal;
+  width: 24px;
+  height: 24px;
 }
 
 .icon-success {
   color: $color-accent6-normal;
+  width: 24px;
+  height: 24px;
 }
 
 .icon-danger {
   color: $color-accent3-normal;
+  width: 24px;
+  height: 24px;
 }
 
 .icon-alert {
   color: $color-accent7-normal;
+  background: #f5d61433;
+  padding: 8px 8px;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
 }
 
 .b-border {
   border: 9px solid #2ea2f847;
-  border-radius: 50px;
+  border-radius: 50%;
 }
 
 .g-border {
   border: 9px solid #00b37733;
-  border-radius: 50px;
+  border-radius: 50%;
 }
 
 .r-border {
   border: 9px solid #e82c8036;
-  border-radius: 50px;
+  border-radius: 50%;
 }
 
-//animations
+//Animations keyframes
 
 @keyframes popup {
   from {

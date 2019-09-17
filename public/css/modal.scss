@@ -46,9 +46,12 @@
 }
 
 .icon-box {
-  margin-right: 15px;
-  margin-top: 24px;
+  position: relative;
+  top: 20px;
+  right: 20px;
   font-size: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 .confirmation-box {
@@ -113,13 +116,29 @@
   color: $color-accent7-normal;
 }
 
+.b-border {
+  border: 9px solid #2ea2f847;
+  border-radius: 50px;
+}
+
+.g-border {
+  border: 9px solid #00b37733;
+  border-radius: 50px;
+}
+
+.r-border {
+  border: 9px solid #e82c8036;
+  border-radius: 50px;
+}
+
 //animations
 
 @keyframes popup {
   from {
     transform: translateY(0px) scale(0);
   }
+
   to {
-    transform: translateY(250px) scale(1);
+    transform: translateY(100px) scale(1);
   }
 }

@@ -44,19 +44,19 @@ export default {
     icon: function() {
       switch (this.state) {
         case "info":
-          return "fa-info-circle";
+          return "fa-info-circle b-border";
           break;
         case "success":
-          return "fa-check-circle";
+          return "fa-check-circle g-border";
           break;
         case "alert":
           return "fa-exclamation-triangle";
           break;
         case "danger":
-          return "fa-exclamation-circle";
+          return "fa-exclamation-circle r-border";
           break;
         default:
-          return "fa-info-circle";
+          return "fa-info-circle b-border";
       }
     }
   },

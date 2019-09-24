@@ -17,8 +17,8 @@
 .modal__content {
   border-top: 10px solid $color-accent1-normal;
   background: $color-white;
-  width: 50%;
-  min-width: 400px;
+  max-width: 580px;
+  min-width: 580px;
   margin: 4% auto;
   border-radius: 4px;
   animation-name: popup;

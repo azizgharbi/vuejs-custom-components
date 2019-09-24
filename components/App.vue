@@ -12,12 +12,7 @@
         <p>
           Excepteur in aliquip et mollit officia aliquip eiusmod
           labore veniam magna. Et deserunt qui ad mollit esse cillum
-          veniam non nostrud reprehenderit ipsum ad. Nulla sunt anim
-          do ut sunt ullamco sunt mollit quis minim aliquip velit in proident,
-          Excepteur in aliquip et mollit officia aliquip eiusmod
-          labore veniam magna. Et deserunt qui ad mollit esse cillum
-          veniam non nostrud reprehenderit ipsum ad. Nulla sunt anim
-          do ut sunt ullamco sunt mollit quis minim aliquip velit in proident.
+          veniam non nostrud reprehenderit ipsum ad. Nulla sunt anim.
         </p>
       </Modal>
     </div>

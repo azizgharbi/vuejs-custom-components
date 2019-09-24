@@ -19,11 +19,10 @@
           veniam non nostrud reprehenderit ipsum ad. Nulla sunt anim
           do ut sunt ullamco sunt mollit quis minim aliquip velit in proident.
         </p>
-        <div slot="footer"></div>
       </Modal>
     </div>
 
-    <div class="options">
+    <div ref="options" class="options">
       <button class="btn demo" v-on:click="open">open</button>
       <h1>Options:</h1>
       <input type="checkbox" id="closeable" v-model="closeable" />
@@ -65,13 +64,13 @@ export default {
   methods: {
     open: function() {
       this.active = !this.active;
-      document.querySelector(".options").classList.add("blur");
+      this.$refs.options.classList.add("blur");
     }
   },
   created() {
-    EventBus.$on("close", c => {
-      this.active = c;
-      document.querySelector(".options").classList.remove("blur");
+    EventBus.$on("close", () => {
+      this.active = false;
+      this.$refs.options.classList.remove("blur");
     });
 
     EventBus.$on("confirm", () => {

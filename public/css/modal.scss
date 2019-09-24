@@ -1,10 +1,10 @@
 @import "./_variables.scss";
 
-.modal-content {
+.modal {
+  z-index: 99999;
   font-family: $font;
   font-weight: 300;
   position: fixed;
-  z-index: 99;
   left: 0;
   top: 0;
   width: 100%;
@@ -14,13 +14,12 @@
   box-shadow: $box-shadow1;
 }
 
-.modal {
+.modal__content {
   border-top: 10px solid $color-accent1-normal;
   background: $color-white;
   width: 50%;
   min-width: 400px;
   margin: 4% auto;
-  padding: 24px;
   border-radius: 4px;
   animation-name: popup;
   animation-fill-mode: both;
@@ -28,16 +27,17 @@
   animation-duration: 0.5s;
 }
 
-.modal-body {
+.modal__body {
   display: flex;
   color: $color-night-gray7;
   font-size: 20px;
   font-weight: 300;
-  margin-top: 50px;
+  padding: 36px;
 }
 
 .close {
   font-size: 30px;
+  margin: 16px;
   font-weight: bold;
   color: $color-night-gray7;
   float: right;
@@ -58,7 +58,7 @@
 
 .confirmation-box {
   text-align: right;
-  margin: 12px 12px;
+  padding: 12px 16px;
 }
 
 .cancel {
@@ -88,39 +88,39 @@
   border-top: 10px solid $color-accent7-normal;
 }
 
-.btn-success {
+.btn--success {
   background-color: $color-accent6-normal;
 }
 
-.btn-danger {
+.btn--danger {
   background-color: $color-accent3-normal;
 }
 
-.btn-alert {
+.btn--alert {
   background-color: $color-accent7-normal;
   color: $color-night-gray7;
 }
 
-.icon-info,
-.icon-normal {
+.icon--info,
+.icon--normal {
   color: $color-accent1-normal;
   width: 24px;
   height: 24px;
 }
 
-.icon-success {
+.icon--success {
   color: $color-accent6-normal;
   width: 24px;
   height: 24px;
 }
 
-.icon-danger {
+.icon--danger {
   color: $color-accent3-normal;
   width: 24px;
   height: 24px;
 }
 
-.icon-alert {
+.icon--alert {
   color: $color-accent7-normal;
   background: #f5d61433;
   padding: 8px 8px;
@@ -129,17 +129,17 @@
   height: 45px;
 }
 
-.b-border {
+.b--border {
   border: 9px solid #2ea2f847;
   border-radius: 50%;
 }
 
-.g-border {
+.g--border {
   border: 9px solid #00b37733;
   border-radius: 50%;
 }
 
-.r-border {
+.r--border {
   border: 9px solid #e82c8036;
   border-radius: 50%;
 }

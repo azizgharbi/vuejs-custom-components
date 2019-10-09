@@ -1,6 +1,6 @@
 ## Description
 
-Test vuejs modal component centiva
+vuejs ui components
 
 ## Current Version
 
